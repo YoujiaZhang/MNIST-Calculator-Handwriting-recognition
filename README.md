@@ -3,7 +3,7 @@
 <img src="images/main.jpg" align=center/>
 </div>
 
-主要代码见 [main.ipynb](main.ipynb)，使用 python==3.6.9，Ubuntu 18.04.6 LTS  [English README.md](readme/README.en.md)
+主要代码见 [main.ipynb](main.ipynb)，使用 python==3.6.9，Ubuntu 18.04.6 LTS  [English README.md](readme/README.en.md)        
 依赖的包：
 - matplotlib == 3.3.4
 - tensorflow == 2.6.2

@@ -3,8 +3,21 @@
 <img src="images/main.jpg" align=center/>
 </div>
 
+主要代码见 [main.ipynb](main.ipynb)
+依赖的包：
+- matplotlib == 3.3.4
+- tensorflow == 2.6.2
+- scikit-learn == 0.24.2
+- numpy == 1.19.5
+- tqdm == 4.62.3
+- opencv-python == 4.5.4.58
+
 ## 1. 数据集扩展
-MNIST数据集只包含 **0~9** 10个数字的图片
+MNIST数据集只包含 **0~9** 10个数字的图片。
+
+<div align=center>
+<img src="images/mnist.png" width = "700" height = "355" align=center/>
+</div>
 
 我们还需要准备四则运算符 **+, -, ×, ÷** 以及 **(, )** 的数据集，将搜集到的扩展数据集进行分类，每一个文件夹存放着一个符号的所有数据。
 
@@ -37,6 +50,7 @@ _________________________________________________________________
 
 ## 3. 目标检测
 我们写了一个算式，如下图所示：
+
 <div align=center>
 <img src="images/out.png" align=center/>
 </div>

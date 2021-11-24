@@ -3,7 +3,7 @@
 <img src="../images/main.jpg" align=center/>
 </div>
 
-Main code in [main.ipynb](../main.ipynb), using python==3.6.9, Ubuntu 18.04.6 LTS [Chinese README.md](../README.md)
+Main code in [main.ipynb](../main.ipynb), using python==3.6.9, Ubuntu 18.04.6 LTS [Chinese README.md](../README.md)     
 Dependent packages.
 - matplotlib == 3.3.4
 - tensorflow == 2.6.2

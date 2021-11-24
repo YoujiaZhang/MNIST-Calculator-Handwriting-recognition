@@ -1,4 +1,7 @@
 # MNIST · 手写识别计算器
+<div align=center>
+<img src="images/main.jpg" align=center/>
+</div>
 
 ## 1. 数据集扩展
 MNIST数据集只包含 **0~9** 10个数字的图片
@@ -34,22 +37,29 @@ _________________________________________________________________
 
 ## 3. 目标检测
 我们写了一个算式，如下图所示：
+<div align=center>
 <img src="images/out.png" align=center/>
+</div>
 
 针对上面的图片，我们需要有效的识别出每一个符号。针对此场景的特殊性（只有黑白两种颜色）我们可以考虑使用无监督聚类算法进行类别划分。K-MEANS 是比较流行得到聚类算法，操作简单，运行快速，实现容易。但是这个算法并不适合我们这个场景，**因为 K-MEANS 需要事先确定分几个类**，这个是不太好实现的和判断。(不过也不是不可以)
 
 为了解决这个问题我们可以使用 **DBSCAN**(Density-Based Spatial Clustering of Applications with Noise)算法，这是一种著名的基于密度聚类的算法。因为我们手写的字符，局
 部的笔画是密集的；而字符与字符之间是相对稀疏的，所以这种算法可以使用。
 
+<div align=center>
 <img src="images/DBSCAN.png" width = "700" height = "185" align=center/>
+</div>
 
 分类效果还是不错的。然后我们需要将每一个识别出来的符号进行提取，并且处理为 28*28 尺寸的图片便于我们模型的输入。分割之后的图片效果如下：
+
 |(|9|+|2|)|×|3|
 |-|-|-|-|-|-|-|
 |<img src="images/split/0.png" width = "100" height = "100" align=center/>|<img src="images/split/2.png" width = "100" height = "100" align=center/>|<img src="images/split/6.png" width = "100" height = "100" align=center/>|<img src="images/split/4.png" width = "100" height = "100" align=center/>|<img src="images/split/1.png" width = "100" height = "100" align=center/>|<img src="images/split/5.png" width = "100" height = "100" align=center/>|<img src="images/split/3.png" width = "100" height = "100" align=center/>|
 
 我们将每一个分割后的图片输入模型进行预测，我们将预测的符号类别、预测概率以及符号在原图中的位置进行标注，结果为：
+<div align=center>
 <img src="images/current.png" align=center/>
+</div>
 
 ## 4. 表达式计算
 
@@ -76,7 +86,9 @@ _________________________________________________________________
 
 我们选择符号 **"9"** 进行解释性计算，其结果如下图所示：
 
-<img src="images/split/exp.png" width = "280" height = "280" align=center/>
+<div align=center>
+<img src="images/split/exp.png" width = "280" height = "280" >
+</div>
 
 将每一个像素点的 **预测贡献度(重要性)** 在原图上进行可视化展示, 总共有 28*28 个贡献度数值。数值越大图中 **小圆点** 的 size 就越大,颜色也越重。  
 

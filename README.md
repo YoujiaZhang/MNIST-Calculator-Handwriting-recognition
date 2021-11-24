@@ -47,8 +47,8 @@ _________________________________________________________________
 |(|9|+|2|)|×|3|
 |-|-|-|-|-|-|-|
 |<img src="images/split/0.png" width = "100" height = "100" align=center/>|<img src="images/split/2.png" width = "100" height = "100" align=center/>|<img src="images/split/6.png" width = "100" height = "100" align=center/>|<img src="images/split/4.png" width = "100" height = "100" align=center/>|<img src="images/split/1.png" width = "100" height = "100" align=center/>|<img src="images/split/5.png" width = "100" height = "100" align=center/>|<img src="images/split/3.png" width = "100" height = "100" align=center/>|
-我们将每一个分割后的图片输入模型进行预测，我们将预测的符号类别、预测概率以及符号在原图中的位置进行标注，结果为：
 
+我们将每一个分割后的图片输入模型进行预测，我们将预测的符号类别、预测概率以及符号在原图中的位置进行标注，结果为：
 <img src="images/current.png" align=center/>
 
 ## 4. 表达式计算
@@ -75,6 +75,7 @@ _________________________________________________________________
 深度学习模型虽然具有很好的预测效果，但其内部的预测原理通常难以解释，往往被看作为是黑盒模型(Black box)。我们使用遮盖法对模型的决策依据进行量化，基本思想：如果将输入特征的值改变会增加模型输出结果的误差，则该特征认为是重要的，因为模型依赖该特征为依据执行预测。反之，如果将特征的值改变模型输出结果的误差很小(或与原结果基本相同)，则该特征不重要，模型不依赖该特征。
 
 我们选择符号 **"9"** 进行解释性计算，其结果如下图所示：
+
 <img src="images/split/exp.png" width = "280" height = "280" align=center/>
 
 将每一个像素点的 **预测贡献度(重要性)** 在原图上进行可视化展示, 总共有 28*28 个贡献度数值。数值越大图中 **小圆点** 的 size 就越大,颜色也越重。  

@@ -3,7 +3,7 @@
 <img src="../images/main.jpg" align=center/>
 </div>
 
-Main code in [main.ipynb](../main.ipynb), using python==3.6.9, Ubuntu 18.04.6 LTS [Chinese README.md](../README.md)     
+Main code in [main.ipynb](../main.ipynb), using python==3.6.9, Ubuntu 18.04.6 LTS [Chinese README.md](../README.md)
 Dependent packages.
 - matplotlib == 3.3.4
 - tensorflow == 2.6.2
@@ -19,7 +19,7 @@ The MNIST dataset contains only **0~9** 10-digit images.
 <img src="../images/mnist.png" width = "700" height = "355" align=center/>
 </div>
 
-We also need to prepare datasets of the four operators **+, -, ×, ÷** and **(, )** to sort the collected extended datasets, each folder holds all the data for a symbol.
+We also need to prepare datasets for the quadratic operators **+, -, ×, ÷** and **(, )**. The collected extended datasets are sorted, and each folder holds all the data for a symbol. The extended dataset is located in `models/cfs.tar.xz` and can be used after unpacking, and contains 33895 images in 6 folders.
 
 ## 2. Model training
 A CNN is used for prediction, and the model structure is shown as follows.

@@ -3,7 +3,7 @@
 <img src="images/main.jpg" align=center/>
 </div>
 
-主要代码见 [main.ipynb](main.ipynb)，使用 python==3.6.9，Ubuntu 18.04.6 LTS  [English README.md](readme/README.en.md)        
+主要代码见 [main.ipynb](main.ipynb)，使用 python==3.6.9，Ubuntu 18.04.6 LTS  [English README.md](readme/README.en.md)
 依赖的包：
 - matplotlib == 3.3.4
 - tensorflow == 2.6.2
@@ -19,7 +19,7 @@ MNIST数据集只包含 **0~9** 10个数字的图片。
 <img src="images/mnist.png" width = "700" height = "355" align=center/>
 </div>
 
-我们还需要准备四则运算符 **+, -, ×, ÷** 以及 **(, )** 的数据集，将搜集到的扩展数据集进行分类，每一个文件夹存放着一个符号的所有数据。
+我们还需要准备四则运算符 **+, -, ×, ÷** 以及 **(, )** 的数据集，将搜集到的扩展数据集进行分类，每一个文件夹存放着一个符号的所有数据。扩展数据集位于 `models/cfs.tar.xz` 解压缩之后即可使用，包含6个文件夹一共 33895 个图片。
 
 ## 2. 模型训练
 采用 CNN 进行预测，模型结构如下所示：

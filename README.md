@@ -1,10 +1,24 @@
-# MNIST · 手写识别计算器
+<h1 align="center">MNIST · 手写识别计算器</h1>
+
+<p align="center">
+<img src="https://img.shields.io/badge/made%20by-youjiaZhang-blue.svg" >
+
+<img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" >
+</p>
+
+- 扩展MNIST数据，新增 **+, -, ×, ÷** 以及 **(, )**
+- CNN 可视化
+- [English README.md](readme/README.en.md)  
+
 <div align=center>
 <img src="images/main.jpg" align=center/>
 </div>
 
-喜欢主要代码见 [main.ipynb](main.ipynb)，使用 python==3.6.9，Ubuntu 18.04.6 LTS  [English README.md](readme/README.en.md)          
-依赖的包：
+---
+
+主要代码见 [main.ipynb](main.ipynb)，
+- python==3.6.9
+- Ubuntu 18.04.6 LTS         
 - matplotlib == 3.3.4
 - tensorflow == 2.6.2
 - scikit-learn == 0.24.2

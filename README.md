@@ -10,6 +10,8 @@
 - CNN 可视化
 - [English README.md](readme/README.en.md)  
 
+**You can also read my [Blog :)](https://youjiazhang.github.io/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/mnist/)** 
+
 <div align=center>
 <img src="images/main.jpg" align=center/>
 </div>

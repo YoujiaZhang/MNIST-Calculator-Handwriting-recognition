@@ -6,11 +6,12 @@
 <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" >
 </p>
 
+## ✉️ Contact
+For feedback, questions, or press inquiries please contact [Youjia Zhang](Youjiazhang@hust.edu.cn). 🤩
+
 - 扩展MNIST数据，新增 **+, -, ×, ÷** 以及 **(, )**
 - CNN 可视化
 - [English README.md](readme/README.en.md)  
-
-**You can also read my [Blog :)](https://youjiazhang.github.io/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/mnist/)** 
 
 <div align=center>
 <img src="images/main.jpg" align=center/>
@@ -28,7 +29,7 @@
 - tqdm == 4.62.3
 - opencv-python == 4.5.4.58
 
-## 1. 数据集扩展
+## 1. 📦 数据集扩展
 MNIST数据集只包含 **0~9** 10个数字的图片。
 
 <!-- <div align=center>
@@ -37,7 +38,7 @@ MNIST数据集只包含 **0~9** 10个数字的图片。
 
 我们还需要准备四则运算符 **+, -, ×, ÷** 以及 **(, )** 的数据集，将搜集到的扩展数据集进行分类，每一个文件夹存放着一个符号的所有数据。**🌱扩展数据集位于 `models/cfs.tar.xz` 解压缩之后即可使用，包含6个文件夹一共 33895 个图片。数据集收集不易喜欢的话给一个✨吧~**
 
-## 2. 模型训练
+## 2. 🚀 模型训练
 采用 CNN 进行预测，模型结构如下所示：
 ```
 Model: "sequential_1"
@@ -64,7 +65,7 @@ Non-trainable params: 0
 _________________________________________________________________ 
 ```
 
-## 3. 目标检测
+## 3. ✍️ 目标检测
 我们写了一个算式，如下图所示：
 
 <div align=center>
@@ -91,7 +92,7 @@ _________________________________________________________________
 <img src="images/current.png" align=center/>
 </div>
 
-## 4. 表达式计算
+## 4. 🫡 表达式计算
 
 我们一般通过 **后缀表达式(逆波兰式)** 进行求值，因为对后缀表达式求值比直接对中缀表达式求值简单很多。**中缀表达式** 不仅依赖运算符的优先级，而且还要处理括号，而后缀表达式中已经考虑了运算符的优先级，且没有括号。主要分为两个步骤：
 1. 把中缀表达式转换为后缀表达式
